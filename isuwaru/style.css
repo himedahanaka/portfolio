@@ -1,0 +1,650 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+
+/* ハンバーガーメニュー//////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* header////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#header {
+  position: relative;
+  z-index: 999;
+}
+
+.header-bg p {
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.header-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 90vh;
+  width: 70vh;
+}
+
+
+
+/* menu//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#menu {
+  margin-top: 10%;
+  margin-bottom: 15%;
+  margin-left: 5%;
+}
+
+#menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#menu li {
+  list-style-type: none;
+  margin-top: 30px;
+  font-size: 1.3rem;
+}
+
+.menu-isuwaru {
+
+  color: #fff;
+  font-size: 1rem;
+
+  text-decoration: none;
+}
+
+
+
+
+/* address //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#address li {
+  font-size: 0.875rem;
+  color: #fff;
+  list-style-type: none;
+  margin-left: 5%;
+}
+
+
+
+/*==================================================
+MENUがCLOSEに切り替わる時
+===================================*/
+
+nav {
+  padding-top: 100px;
+}
+
+.openbtn {
+  position: relative;
+  background: #000;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 10px;
+
+  top: 30px;
+  left: 30px;
+}
+
+/*ボタン内側*/
+.openbtn span {
+  display: inline-block;
+  transition: all .4s;
+  /*アニメーションの設定*/
+  position: absolute;
+  left: 14px;
+  height: 2px;
+  border-radius: 5px;
+  background: #fff;
+  width: 45%;
+}
+
+
+.openbtn span:nth-of-type(1) {
+  top: 13px;
+}
+
+.openbtn span:nth-of-type(2) {
+  top: 19px;
+}
+
+.openbtn span:nth-of-type(3) {
+  top: 25px;
+}
+
+.openbtn span:nth-of-type(3)::after {
+  content: "Menu";
+  /*3つ目の要素のafterにMenu表示を指定*/
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  color: #fff;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+
+/*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
+
+.openbtn.active span:nth-of-type(1) {
+  top: 14px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+
+}
+
+.openbtn.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3) {
+  top: 26px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+.openbtn.active span:nth-of-type(3)::after {
+  content: "Close";
+  /*3つ目の要素のafterにClose表示を指定*/
+  transform: translateY(0) rotate(-45deg);
+  top: 5px;
+  left: 4px;
+}
+
+
+/* 全ページ共通//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.ms-section {
+  padding: 0 10%;
+}
+
+/* section left1//////////////////////////////////////////// */
+
+#left1 {
+  text-align: center;
+}
+
+
+#left1 h2 {
+  font-size: 80px;
+  margin: 0 10px 0 0;
+
+}
+
+
+#left1 p {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+
+
+/* section left2 //////////////////////////////////////////////*/
+
+.ms-section {
+  text-align: left;
+}
+
+.ms-section h2 {
+  font-size: 2.25rem;
+}
+
+
+.ms-section p {
+  font-size: 1.125rem;
+}
+
+
+
+
+
+/* index.html//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#index-right1 {
+  background: url("img/index-1.jpg") no-repeat center;
+  /*中央に繰り返しなしで配置*/
+  background-size: cover;
+  /*表示エリアいっぱいに画像を表示*/
+}
+
+#index-right2 {
+  background: url("img/index-2.jpg") no-repeat center;
+  /*中央に繰り返しなしで配置*/
+  background-size: cover;
+  /*表示エリアいっぱいに画像を表示*/
+}
+
+
+
+
+/* product.html ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#product-right1 {
+  background: url("img/product-0.png") no-repeat center;
+  /*中央に繰り返しなしで配置*/
+  background-size: cover;
+  /*表示エリアいっぱいに画像を表示*/
+}
+
+#product-right2 {
+  background: url("img/product-1.jpg") no-repeat center;
+  /*中央に繰り返しなしで配置*/
+  background-size: cover;
+  /*表示エリアいっぱいに画像を表示*/
+}
+
+#product-right3 {
+  background: url("img/product-2.jpg") no-repeat center;
+  /*中央に繰り返しなしで配置*/
+  background-size: cover;
+  /*表示エリアいっぱいに画像を表示*/
+}
+
+
+.price {
+  text-align: right;
+}
+
+
+
+
+
+/* info.html //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#info-left2 h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+#info-left2 h3 {
+  text-align: center;
+  font-size: 1.875rem;
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+
+
+#info-right1 {
+  background: url("img/info-0.jpg") no-repeat center;
+  /*中央に繰り返しなしで配置*/
+  background-size: cover;
+  /*表示エリアいっぱいに画像を表示*/
+}
+
+#info-right2 {
+  background: url("img/info-1.jpg") no-repeat center;
+  /*中央に繰り返しなしで配置*/
+  background-size: cover;
+  /*表示エリアいっぱいに画像を表示*/
+}
+
+
+
+
+
+
+/* info.html news////////////////////////////////////////////////////////// */
+
+#news dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px #000;
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+
+#news dt {
+  width: 20%;
+  /* border-bottom: solid 1px #c8c8c8; */
+  padding: 10px 0;
+}
+
+#news dd {
+  width: 60%;
+  /* border-bottom: solid 1px #c8c8c8; */
+  padding: 10px 0;
+}
+
+.news {
+  margin-top: 100px;
+}
+
+
+
+/*info.html buton////////////////////////////////////////////  */
+
+.button {
+  color: #000;
+  border-radius: 5px;
+  border: 2px solid #000;
+  width: 100px;
+  padding: 0.5em;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.button-center {
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+
+/*contact.html/////////////////////////////////////////////////////////////////////////////////////////////// //////////////////////////*/
+
+#contact-right1 {
+  background: url("img/contact-1.png") no-repeat center;
+  /*中央に繰り返しなしで配置*/
+  background-size: cover;
+  /*表示エリアいっぱいに画像を表示*/
+}
+
+#contact-right2 {
+  background: url("img/contact-2.jpg") no-repeat center;
+  /*中央に繰り返しなしで配置*/
+  background-size: cover;
+  /*表示エリアいっぱいに画像を表示*/
+}
+
+.contact-h2 {
+  margin-top: 80px;
+}
+
+
+/* contact.html form  コンタクトページ内フォーム /////////////////*/
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(225, 225, 225, 0.5);
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 50%;
+}
+
+textarea {
+  width: 70%;
+  height: 6rem;
+}
+
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  width: 100px;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: #000 solid 2px;
+  font-size: 1rem;
+}
+
+
+
+/* responsive//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width:768px) {
+
+
+/* 全ページ共通////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+  .ms-tableCell {
+    vertical-align: top;
+  }
+
+  .ms-right {
+    display: none;
+  }
+
+  .ms-left {
+    width: 100% !important;
+  }
+
+  .sp-top {
+    height: 30%;
+    margin: 0 0 60px 0;
+  }
+
+  
+
+  #left1 h2 {
+    margin-top: 50px;
+    font-size: 3rem;
+  }
+
+  #left1 p {
+    font-size: 1.5rem;
+  }
+
+  /* header内nav背景 */
+  .header-bg {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 90vh;
+    width: 50vh;
+  }
+
+  #menu li {
+    list-style-type: none;
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+
+
+  .menu-isuwaru {
+
+    font-size: 1rem;
+
+  }
+
+
+  .header-bg p {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+
+/* index.html//////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#left1 .sp-top {
+  background: url("img/indexr-1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#left2 .sp-top {
+  background: url("img/indexr-2.jpg") no-repeat center;
+  background-size: cover;
+}
+
+
+  /* info.html ////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+  #left1 .info-sp-top {
+    background: url("img/infor-0.png") no-repeat center;
+    background-size: cover;
+  }
+
+  .info-sp-top {
+    height: 30%;
+    margin: 0 0 20px 0;
+  }
+  
+
+  #info-left2 h2 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 100px;
+    margin-bottom: 0px;
+  }
+
+  #info-left2 h3 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+
+  /*info.html news//////////////////////////////////////////////////////////////////////////////////////////////// */
+
+  #news dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid 1px #000;
+    border-bottom: 1px solid #000;
+    margin-bottom: 5px;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+
+  #news dt {
+    width: 20%;
+    padding: 5px 0;
+  }
+
+  #news dd {
+    width: 60%;
+    padding: 5px 0;
+  }
+
+  /*info.html buton////////////////////////////////  */
+
+  .button {
+    border: 1px solid;
+    width: 70px;
+    padding: 0.2em;
+    font-size: 0.875rem;
+  }
+
+  .button-center {
+    margin-top: 0.785rem;
+  }
+
+
+
+
+  /*contact.html form ////////////////////////////////////////////*/
+
+  #left1 .contact-sp-top {
+    background: url("img/contact-1.png") no-repeat center;
+    background-size: cover;
+  }
+
+  .contact-sp-top {
+    height: 30%;
+    margin: 0 0 20px 0;
+  }
+
+
+  .ms-section h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+
+  .ms-section p {
+    font-size: 1rem;
+  }
+
+  form div {
+    margin-bottom: 15px;
+
+  }
+
+  label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    background: rgba(225, 225, 225, 0.5);
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 0.875rem;
+  }
+
+
+  input[type="text"],
+  input[type="email"] {
+    width: 50%;
+  }
+
+  textarea {
+    width: 70%;
+    height: 2rem;
+  }
+
+  input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    width: 70px;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: #000 solid 2px;
+    font-size: 1rem;
+  }
+
+
+
+
+/* product//////////////////////// */
+#left1 .product-sp-top {
+  background: url("img/product-0.png") no-repeat center;
+  background-size: cover;
+}
+
+.product-sp-top {
+  height: 30%;
+  margin: 0 0 60px 0;
+}
+
+#left2 .product-sp-top {
+  background: url("img/product-1.jpg") no-repeat center;
+  background-size: cover;
+}
+#left3 .product-sp-top {
+  background: url("img/product-2.jpg") no-repeat center;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+}
