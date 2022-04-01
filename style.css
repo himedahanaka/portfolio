@@ -163,17 +163,9 @@ h2 {
 }
 
 
-/* .learning-category-gruopall {
-    /* line-height: 1.8rem; */
-/* } */ 
-
-/* 
-#learning h3{
-    text-align: left;
-} */
 
 .learning-school{
-  margin: 100px;
+  margin: 100px auto;
 }
 
 .learning-h3-p {
