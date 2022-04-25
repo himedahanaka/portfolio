@@ -379,4 +379,12 @@ form{
 
 }
 
+
+input[type="submit"]{
+    background: #fff;
+    color: #000;
+ }
+
+ 
+
 }
