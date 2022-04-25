@@ -432,7 +432,7 @@ input[type="submit"] {
 
   .sp-top {
     height: 30%;
-    margin: 0 0 60px 0;
+   
   }
 
   
@@ -629,20 +629,18 @@ input[type="submit"] {
 
 .product-sp-top {
   height: 30%;
-  /* margin: 100px 0 30px 0;
-  /* margin: 0px 0 60px 0; */
-  /* margin: 100px 0 60px 0; */ 
+ 
 }
 
 #left2 .product-sp-top {
   background: url("img/product-1.jpg") no-repeat center;
   background-size: cover;
-  /* margin: 5rem 0; */
+  
 }
 #left3 .product-sp-top {
   background: url("img/product-2.jpg") no-repeat center;
   background-size: cover;
-  /* margin: 5rem 0; */
+  
 }
 
 
