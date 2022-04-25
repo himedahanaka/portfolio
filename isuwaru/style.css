@@ -635,12 +635,12 @@ input[type="submit"] {
 #left2 .product-sp-top {
   background: url("img/product-1.jpg") no-repeat center;
   background-size: cover;
-  margin: 3rem 0;
+  margin: 5rem 0;
 }
 #left3 .product-sp-top {
   background: url("img/product-2.jpg") no-repeat center;
   background-size: cover;
-  margin: 3rem 0;
+  margin: 5rem 0;
 }
 
 
