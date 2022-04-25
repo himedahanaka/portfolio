@@ -271,6 +271,7 @@ form div {
   }
   input[type="submit"]:hover{
     background: #409ecc;
+    color: #000;
  }
   
 
@@ -333,6 +334,12 @@ form{
 
 
 }
+
+
+input[type="submit"]:hover{
+    /* background: #409ecc; */
+    color: #000;
+ }
 
 }
 
